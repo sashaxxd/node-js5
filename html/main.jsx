@@ -18,8 +18,21 @@ class Signin extends React.Component {
         this.setState({password:e.target.value})
     }
 
+    // signIn(){
+    //     alert('Email address is ' + this.state.email + ' Password is ' + this.state.password);
+    // }
+
     signIn(){
-        alert('Email address is ' + this.state.email + ' Password is ' + this.state.password);
+        axios.post('/signin', {
+            email: this.state.email,
+            password: this.state.password
+        })
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     }
 
 
