@@ -6,3 +6,7 @@ Axios — это JavaScript-библиотека для выполнения
 — автоматические преобразования JSON-данных.
 
 npm install body-parser --save
+
+npm install mongodb
+
+ Переход на другой диск в командной виндовс cd /d d:\ переходим в папку с базой  cd mongodb запускаем ее mongod
